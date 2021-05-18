@@ -1,0 +1,25 @@
+$border_color: #F00 !default;
+$backgroud_color: #FFF !default;
+$text_color: #000 !default;
+
+.header, %header{
+    font-size: 22px;
+    text-transform: capitalize;
+    border-bottom: 5px solid $border_color;
+
+    &.primary{
+        color: $text_color;
+    }
+}
+
+
+@mixin create_header ($sufijo, $border_color: $border_color, $text_color:$text_color){
+    .header-#{$sufijo}{
+        @extend .header;
+        border-color: $border_color;
+    
+        &.primary{
+            color: $text_color;
+        }
+    }
+}

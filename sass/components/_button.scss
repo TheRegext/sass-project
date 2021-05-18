@@ -1,0 +1,16 @@
+@use 'color';
+
+.button{
+    border: 1px solid #000;
+    background-color: rgba(0,0,0,.5);
+    margin: 20px;
+
+    &:hover{
+        outline: 2px solid #F0F;
+    }
+
+    &.primary{
+        border-color: blueviolet;
+        background-color: color.$primary_color;
+    }
+}

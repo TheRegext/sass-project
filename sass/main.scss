@@ -1,0 +1,14 @@
+@use 'components/button';
+@use 'components/header';
+
+@include header.create_header("dark", #000);
+@include header.create_header("blue", #00f);
+
+
+
+.text{
+    color: #000;
+    &.primary{
+        color: header.$border_color
+    }
+}

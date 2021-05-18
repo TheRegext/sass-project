@@ -1,0 +1,42 @@
+.button {
+  border: 1px solid #000;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 20px;
+}
+.button:hover {
+  outline: 2px solid #F0F;
+}
+.button.primary {
+  border-color: blueviolet;
+  background-color: #000;
+}
+
+.header, .header-dark, .header-blue {
+  font-size: 22px;
+  text-transform: capitalize;
+  border-bottom: 5px solid #F00;
+}
+.header.primary, .primary.header-dark, .primary.header-blue {
+  color: #000;
+}
+
+.header-dark {
+  border-color: #000;
+}
+.header-dark.primary {
+  color: #000;
+}
+
+.header-blue {
+  border-color: #00f;
+}
+.header-blue.primary {
+  color: #000;
+}
+
+.text {
+  color: #000;
+}
+.text.primary {
+  color: #F00;
+}/*# sourceMappingURL=main.css.map */
